@@ -1,30 +1,31 @@
-package whileloop;
-import java.util.Arrays;
-import java.util.ArrayList;
+package dimansional;
 import java.util.Scanner;
-
-
 
 public class demo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		//while
-//        int i=1;
-//        while(i<=10) {
-//        	System.out.println(i);
-//        	i+=1;
-//        }
+		Scanner sc=new Scanner(System.in);
 		
-		
-		
-		//dowhile
-		int i=0;
-		do {
-			System.out.println(i);
-			i++;
-		}
-		while(i<=10);
+         int[][]numbers= new int[4][2];
+	    numbers[0][0]=2;
+	    numbers[0][1]=4;
+	    numbers[1][0]=6;
+	    numbers[1][1]=9;
+	    numbers[2][0]=4;
+	    numbers[2][1]=9;
+	    numbers[3][0]=4;
+	    numbers[3][1]=9;
+	    for(int i=0;i<4;i++) //row count
+	    {
+	    	for(int j=0;j<2;j++)//column count
+	    	{
+	    		System.out.print(numbers[i][j]+" ");
+	    	}
+	    	System.out.println();
+	    }
+	    
+	    
+	
 	}
-
 }
